@@ -197,7 +197,7 @@ if( BUILD_TEST )
 		       	MARK_AS_ADVANCED(BLAS_LIBRARIES)
 		       	message(STATUS "Using Accelerate framework on Mac OS-X")
 	    else()
-			find_package( Netlib COMPONENTS BLAS REQUIRED )
+			find_package(BLAS REQUIRED)
         endif()
 		else( )
 		# Find ACML BLAS implementation
